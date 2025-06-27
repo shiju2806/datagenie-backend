@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataGenie API</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 { margin: 0 0 20px 0; font-size: 2.5em; }
+        .subtitle { opacity: 0.9; margin-bottom: 40px; font-size: 1.2em; }
+        .endpoint {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+        }
+        .method { 
+            background: #4CAF50; 
+            color: white; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 0.8em; 
+            margin-right: 10px;
+        }
+        a { color: #81C784; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .status {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 DataGenie API</h1>
+        <p class="subtitle">AI-Powered Business Intelligence Backend</p>
+        
+        <div class="status">🟢 Backend Online</div>
+        
+        <h2>API Endpoints</h2>
+        
+        <div class="endpoint">
+            <span class="method">GET</span>
+            <strong><a href="/api/health" target="_blank">/api/health</a></strong>
+            <br><small>Health check and system status</small>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">POST</span>
+            <strong>/api/chat</strong>
+            <br><small>AI chat endpoint for business intelligence queries</small>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">POST</span>
+            <strong>/api/upload</strong>
+            <br><small>File upload and data processing</small>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">GET</span>
+            <strong>/api/analytics/kpis</strong>
+            <br><small>Real-time KPI calculations and metrics</small>
+        </div>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>🧠 Claude AI integration for intelligent analysis</li>
+            <li>🏗️ Supabase database with Row Level Security</li>
+            <li>📁 Advanced file upload and processing</li>
+            <li>📊 Real-time analytics and KPIs</li>
+            <li>🔐 Built-in authentication system</li>
+            <li>🚀 Serverless deployment on Vercel</li>
+        </ul>
+        
+        <h2>Test the API</h2>
+        <p>
+            <a href="/api/health" target="_blank">👆 Click here to test the health endpoint</a>
+        </p>
+        
+        <div style="margin-top: 40px; text-align: center; opacity: 0.7;">
+            <small>DataGenie Backend v1.0.0 | Powered by Vercel + Supabase</small>
+        </div>
+    </div>
+</body>
+</html>
